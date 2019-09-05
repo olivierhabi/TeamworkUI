@@ -22,7 +22,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  top: 50%;
+  top: 430px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -114,19 +114,6 @@ hr.style-one {
   background-image: -o-linear-gradient(left, #616161, #616161, #616161);
 }
 
-.b1 {
-  display: block;
-  font-size: 16px;
-  /* margin-top: 90px; */
-  /* padding: 80px 0; */
-  text-align: center;
-  text-decoration: center;
-  color: #fff;
-  font-weight: bold;
-  transition: 0.4s all;
-  text-decoration: none;
-}
-
 .text-p {
   font-family: "Roboto", sans-serif;
   font-size: 23px;
@@ -160,6 +147,44 @@ hr.style-one {
   color: #fff;
   text-decoration: none;
 }
+.user-option {
+  display: inline;
+  float: right;
+  
+}
+
+.delete-article {
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 60px;
+  border: 2px solid #e74c3c;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+  height: 30px;
+  width: 60px;
+  bottom: 12px;
+}
+.edit-article {
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 600px;
+  border: 2px solid #2ecc71;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  cursor: pointer;
+  outline: none;
+  margin: 5px;
+  height: 30px;
+  width: 60px;
+  bottom: 12px;
+}
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -183,7 +208,7 @@ hr.style-one {
   text-align: center;
   color: #000;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .navbar {
@@ -340,9 +365,17 @@ header.topbar {
 }
 
 .container2 {
-  width: 40% !important;
+  width: 60% !important;
   margin: 20px auto !important;
   box-sizing: border-box !important;
+}
+.container4 {
+  width: 60% !important;
+  margin: 20px auto !important;
+  box-sizing: border-box !important;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: auto;
 }
 .content-link {
   color: #2d3436;
@@ -405,12 +438,26 @@ header.topbar {
   width: 100%;
   margin-bottom: 15px;
 }
+.input-container1 {
+  display: -ms-flexbox; /*IE10 */
+  display: flex;
+  width: 50%;
+  margin-bottom: 6px;
+  /* margin: 20px; */
+}
 
 .input-field {
   width: 100%;
   padding: 10px;
   outline: none;
   border: 2px solid #e3f2fd;
+}
+.input-field1 {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid dodgerblue;
+  margin-left: 20px;
 }
 
 .input-field:focus {
@@ -429,22 +476,18 @@ header.topbar {
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-
-  /* width: 270px;
-  height: 50px;
-  background: #01579b;
-  color: #fff;
-  text-align: center;
-  border-radius: 40px;
-  margin: 10px auto;
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
+}
+.btn-new1 {
+  margin: 20px;
+  background-color: dodgerblue;
+  color: white;
   border: none;
   cursor: pointer;
-  text-decoration: none;
-  border: 2px solid #fff; */
-  
+  width: 90px;
+  height: 40px;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 #my-field::placeholder {
@@ -628,12 +671,34 @@ ul li {
   padding: 12px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 829px) {
   .link-right-position,
   a {
     float: left !important;
     font-size: 15px !important;
   }
+  .container3 .btn-holder {
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+  }
+
+  
+.container {
+  width: 300px;
+  height: 450px;
+  border-radius: 12px;
+  z-index: 1;
+  background-color: #1976d2;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 380px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
 
   .dropdown .dropbtn {
     font-size: 16px;
@@ -645,6 +710,19 @@ ul li {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+  }
+  .button-compose-article {
+    background-color: #039be5;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 40px;
+    border: 2px solid #039be5;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    outline: none;
   }
   #grid-div {
     width: 100% !important;
@@ -668,6 +746,40 @@ ul li {
 
   .view-mail {
     margin-bottom: 30px !important;
+  }
+  .container2 {
+    width: 80% !important;
+    margin: 20px auto !important;
+    box-sizing: border-box !important;
+  }
+  .edit-article {
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 10px;
+    border: 2px solid #2ecc71;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+    height: 20px;
+    align-content: bottom;
+  }
+  .delete-article {
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 40px;
+    border: 2px solid #e74c3c;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    bottom: 5px;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+    height: 20px;
   }
 
   .article {
@@ -713,6 +825,36 @@ ul li {
   .form-new-message {
     margin: 15px;
   }
+  .text-p {
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  .tbox {
+    width: 240px;
+    height: 50px;
+    background: #fafafa;
+    color: black;
+    border-radius: 40px;
+    margin: 20px auto;
+    border-top: 20px;
+  }
+  .btn {
+    width: 220px;
+  }
+  .div-form {
+    padding-top: 10px;
+  }
+  .b2 {
+    bottom: 50px;
+  }
+  .b3 {
+    bottom: 20px;
+  }
+  #b1 {
+    bottom: 90px;
+  }
 
   .background {
     background-image: none !important;
@@ -749,3 +891,6 @@ ul li {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 768px) {
+  
+}
