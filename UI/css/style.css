@@ -374,7 +374,15 @@ header.topbar {
   margin: 20px auto !important;
   box-sizing: border-box !important;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 220px;
+  margin: auto;
+}
+.container5 {
+  width: 40% !important;
+  margin: 20px auto !important;
+  box-sizing: border-box !important;
+  padding-top: 20px;
+  padding-bottom: 220px;
   margin: auto;
 }
 .content-link {
@@ -391,6 +399,7 @@ header.topbar {
   padding: 12px;
   align-content: bottom;
   font-weight: bold;
+  display: inline;
 }
 
 .article {
@@ -435,15 +444,24 @@ header.topbar {
 .input-container {
   display: -ms-flexbox; /*IE10 */
   display: flex;
-  width: 100%;
+  /* width: 60%; */
+  /* float: center; */
   margin-bottom: 15px;
+  text-align: center;
 }
 .input-container1 {
   display: -ms-flexbox; /*IE10 */
   display: flex;
-  width: 50%;
+  width: 100%;
   margin-bottom: 6px;
   /* margin: 20px; */
+}
+.input-container2 {
+  display: -ms-flexbox; /*IE10 */
+  display: flex;
+  width: 90%;
+  margin-bottom: 6px;
+  margin: 20px;
 }
 
 .input-field {
@@ -515,10 +533,6 @@ header.topbar {
   text-align: center;
 }
 
-.form-new-message {
-  max-width: 500px;
-  margin: auto;
-}
 
 .btn:hover {
   opacity: 1;
@@ -538,20 +552,30 @@ textarea {
 .text-article {
   line-height: 30px;
 }
-.footer {
-  position: fixed;
+/* .footer {
+  position: botto;
   left: 0;
   bottom: 0;
-  width: 100%;
+  align-content: center;
+  width: 60%;
   background-color: dodgerblue;
   color: white;
   text-align: center;
-}
 
-.footer22 {
+} */
+/* 
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  background:dodgerblue;
+} */
+
+#footer {
   clear: both;
   position: relative;
-  height: 40px;
+  height: 20px;
   margin-top: -40px;
   padding: 1rem;
   text-align: center;
@@ -675,14 +699,37 @@ ul li {
   .link-right-position,
   a {
     float: left !important;
-    font-size: 15px !important;
+    font-size: 10px !important;
   }
   .container3 .btn-holder {
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 10px;
   }
-
+  .container4 {
+    width: 90% !important;
+    margin: 20px auto !important;
+    box-sizing: border-box !important;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+  }
+  .post-meta a {
+    color: #2d3436;
+    font-size: 14px;
+    padding: 12px;
+    align-content: bottom;
+    font-weight: bold;
+  }
+  .container5 {
+    width: 90% !important;
+    margin: 20px auto !important;
+    box-sizing: border-box !important;
+    padding-top: 20px;
+    padding-bottom: 220px;
+    margin: auto;
+  }
+}
   
 .container {
   width: 300px;
@@ -822,8 +869,11 @@ ul li {
     margin: auto;
   }
 
-  .form-new-message {
-    margin: 15px;
+  .form-new-article {
+    /* margin-left: 350px;
+    margin-right: 350px; */
+    max-width: 40%;
+    float: center;
   }
   .text-p {
     font-family: "Roboto", sans-serif;
@@ -865,6 +915,19 @@ ul li {
   }
 }
 
+@media only screen and (min-width: 360px) {
+  .container2 {
+    width: 90% !important;
+    margin: 20px auto !important;
+    box-sizing: border-box !important;
+  }
+  /* .form-new-article {
+    max-width: 300px;
+    margin: auto;
+  } */
+
+}
+
 .new-message {
   margin-top: 40px;
 }
@@ -891,6 +954,3 @@ ul li {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 768px) {
-  
-}
