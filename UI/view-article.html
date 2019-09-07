@@ -22,7 +22,6 @@
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="profile.html">Profile</a>
               <a href="index.html">Logout</a>
             </div>
           </div>
@@ -39,6 +38,17 @@
             >
             <div class="post-meta">
               <a href="#"><i class="far fa-user"></i> By James Smith</a>
+              <div class="user-option">
+                  <a href="edit-article.html"
+                  ><button class="edit-article">Edit</button></a
+                  >
+                  <a
+                  href="#"
+                  class="delete"
+                  data-confirm="Are you sure to delete this item?"
+                  ><button class="delete-article">Delete</button></a
+                >
+              </div>
             </div>
             <p class="text-article">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -114,11 +124,28 @@
             </p>
             <div class="post-meta">
               <a href="#"> Tags: design</a>
+              <a class="modal-flag" onclick="openForm()" href="#"><i class="fas fa-flag"></i>Report</a>
             </div>
-            <div class="user-option">
-              <button class="edit-article">Edit</button>
-              <button class="delete-article">Delete</button>
-            </div>
+            <div class="article9" id="myForm">
+                <div class="content">
+                  <form class="input-container1">
+                  <div class="input-container1">
+                      <input
+                        class="input-field"
+                        id="my-field"
+                        type="text"
+                        placeholder="Report reason"
+                        name="username"
+                        autocomplete="off"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="user-report">
+                    <button class="report-article">Report</button>
+                    <button class="delete-article" onclick="closeForm()">Close</button>
+                </div>
+              </div>
           </div>
         </div>
         <div class="article">
@@ -151,20 +178,29 @@
                 debitis, inventore, ex dolorem rerum aut ipsa quia eaque
                 consectetur! Modi similique animi commodi est.
               </p>
-          </div>
-        </div>
-        <div class="article">
-            <div class="content">
               <div class="post-meta">
-                <a href="#">By Olivier Walter</a>
-                <a href="#"> 2019-08-28 10:57:05</a>
+                <a class="modal-flag" onclick="openForm1()" href="#"><i class="fas fa-flag"></i> Report</a>
               </div>
-              <p class="text-article">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus unde exercitationem reiciendis cupiditate, voluptas sit
-                  debitis, inventore, ex dolorem rerum aut ipsa quia eaque
-                  consectetur! Modi similique animi commodi est.
-              </p>
+              <div class="article9" id="myForm1">
+                  <div class="content">
+                    <form class="input-container1">
+                    <div class="input-container1">
+                        <input
+                          class="input-field"
+                          id="my-field"
+                          type="text"
+                          placeholder="Report reason"
+                          name="username"
+                          autocomplete="off"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="user-report">
+                      <button class="report-article"> Report</button>
+                      <button class="delete-article" onclick="closeForm1()">Close</button>
+                  </div>
+                </div>
           </div>
         </div>
       </div>
