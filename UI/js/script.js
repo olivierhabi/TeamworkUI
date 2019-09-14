@@ -12,6 +12,13 @@ for (var i = 0; i < deleteLinks.length; i++) {
   });
 }
 
+document
+  .getElementById("report-flag")
+  .addEventListener("click", function(event) {
+    event.preventDefault();
+    openForm();
+  });
+
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
